@@ -16,4 +16,9 @@ export class AlbumCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  showAlbum() {
+    alert('Album selected: ' + this.album.album_name);
+    console.log('Album name: ' + this.album.album_name);
+}
+
 }
