@@ -65,6 +65,11 @@ export class AlbumListComponent implements OnInit {
     ];
 
     console.log(this.albumsArray);
+
   }
+
+  parentFunctionHandler(album) {
+    alert('Album ' + album.album_name + ' was sent from the album card component');
+}
 
 }
