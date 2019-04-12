@@ -29,5 +29,11 @@
     style="width:40px;height:40px;"
     [ngStyle]="{ 'background-color': album.on_sale ? 'green' : '' }"
   />
+  <button
+  class="btn btn-primary float-right"
+  [routerLink]="['/albums', album.id]"
+>
+  See Details
+</button>
   </div>
 </div>

@@ -14,4 +14,8 @@ import { Album } from '../album.model';
         getAlbums(): Observable<Album[]> {
           return this.http.get<Album[]>(this.url);
         }
+
+        getAlbumById(id: number): Observable<Album> {
+          return this.http.get<Album>(this.url + "/" + id);
+        }
    }
